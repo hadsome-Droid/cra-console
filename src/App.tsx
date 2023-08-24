@@ -7,6 +7,7 @@ import Npmsvg from "./assets/image/npm-svgrepo-com.svg"
 import Forest from "./assets/image/i.webp"
 import Forest2 from "./assets/image/i3.webp"
 import styled from "styled-components";
+import {BoxTransform} from "./components/transform/BoxTransform";
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
                 {/*<Rating value={4}/>*/}
                 {/*<Rating value={5}/>*/}
             </BoxFlex>
-
+            <BoxTransform/>
         </div>
     );
 }
