@@ -1,0 +1,56 @@
+import {mult, splitIntoWords, sum} from "./01";
+
+let a: number
+let b: number
+let c: number
+
+let str1: string
+let str2: string
+let str3: string
+
+test('sum should be correct', () => {
+    //data
+    a = 1
+    b = 2
+    c = 3
+
+    //action
+    const result1 = sum(a, b)
+    const result2 = sum(b, c)
+
+    //expect result
+    expect(result1).toBe(3)
+    expect(result2).toBe(5)
+})
+test('mult should be correct', () => {
+    //data
+    a = 1
+    b = 2
+    c = 3
+
+    //action
+    const result1 = mult(a, b)
+    const result2 = mult(b, c)
+
+    //expect result
+    expect(result1).toBe(2)
+    expect(result2).toBe(6)
+})
+
+test('should be return array correct length', ()=>{
+    //data
+    str1 = 'Hello my Friend!'
+    str2 = 'goodbye our old car'
+    str3 = 'this is my first test that I wrote myself'
+
+    //action
+    const result = splitIntoWords(str1)
+    const result2 = splitIntoWords(str2)
+    const result3 = splitIntoWords(str3)
+
+    //expect result
+    expect(result).toStrictEqual(['Hello', 'my', 'Friend!'])
+    expect(result2).toStrictEqual(['goodbye', 'our', 'old', 'car'])
+    expect(result3).toStrictEqual(['this', 'is', 'my', 'first', 'test', 'that', 'I', 'wrote', 'myself'])
+
+})

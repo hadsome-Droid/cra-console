@@ -8,6 +8,7 @@ import Forest from "./assets/image/i.webp"
 import Forest2 from "./assets/image/i3.webp"
 import styled from "styled-components";
 import {BoxTransform} from "./components/transform/BoxTransform";
+import CallTest01 from "./components/Tests/test-01/callTest-01";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 {/*<Rating value={5}/>*/}
             </BoxFlex>
             <BoxTransform/>
+            <CallTest01/>
         </div>
     );
 }
