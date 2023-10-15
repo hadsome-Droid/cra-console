@@ -1,4 +1,4 @@
-import {mult, splitIntoWords, sum} from "./01";
+import {mult, splitIntoWords, sum, toUpperLetter} from "./01";
 
 let a: number
 let b: number
@@ -53,4 +53,21 @@ test('should be return array correct length', ()=>{
     expect(result2).toStrictEqual(['goodbye', 'our', 'old', 'car'])
     expect(result3).toStrictEqual(['this', 'is', 'my', 'first', 'test', 'that', 'I', 'wrote', 'myself'])
 
+})
+
+test('first letter in the sting should be capitalize', () => {
+    //data
+    str1 = 'Без труда не выловишь и рыбку из пруда'
+    str2 = 'Всё хорошо, что хорошо кончается'
+    str3 = 'В гостях хорошо, а дома лучше'
+
+    //action
+    const result = toUpperLetter(str1)
+    const result2 = toUpperLetter(str2)
+    const result3 = toUpperLetter(str3)
+
+    //expect result
+    expect(result).toStrictEqual('Без Труда Не Выловишь И Рыбку Из Пруда')
+    expect(result2).toStrictEqual('Всё Хорошо, Что Хорошо Кончается')
+    expect(result3).toStrictEqual('В Гостях Хорошо, А Дома Лучше')
 })

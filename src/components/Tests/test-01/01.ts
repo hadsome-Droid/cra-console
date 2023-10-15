@@ -12,3 +12,8 @@ export const sum = (a:number, b:number) =>{
 export const mult = (a:number, b:number) =>{
         return a * b
 }
+
+export const toUpperLetter = (str: string) => {
+        let result = str.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+        return result
+}
