@@ -8,11 +8,17 @@ let str1: string
 let str2: string
 let str3: string
 
-test('sum should be correct', () => {
-    //data
+beforeEach( ()=>{
     a = 1
     b = 2
     c = 3
+})
+
+test('sum should be correct', () => {
+    //data
+    // a = 1
+    // b = 2
+    // c = 3
 
     //action
     const result1 = sum(a, b)
@@ -24,9 +30,9 @@ test('sum should be correct', () => {
 })
 test('mult should be correct', () => {
     //data
-    a = 1
-    b = 2
-    c = 3
+    // a = 1
+    // b = 2
+    // c = 3
 
     //action
     const result1 = mult(a, b)
