@@ -48,7 +48,9 @@ test('houses on the that street should be demolish', () => {
 })
 
 test('house build year should be > 2010 ', ()=>{
-    buildedYear(city, 2010)
+  let builded = buildedYear(city, 2010)
 
-    expect(city.houses.length).toBe(2)
+    expect(builded.length).toBe(2)
+    expect(builded[0].id).toBe(1)
+    expect(builded[1].id).toBe(3)
 })
