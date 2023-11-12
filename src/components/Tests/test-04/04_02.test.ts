@@ -1,40 +1,10 @@
-import {buildedYear, CityType, demolishHousesOnTheStreet} from "./04_02";
+import {buildedYear,  demolishHousesOnTheStreet} from "./04_02";
+import {CityType, testCity} from "../test-data/DataTest";
 
 let city: CityType;
 
 beforeEach(() => {
-    city = {
-        title: 'New York',
-        houses: [
-            {
-                id: 1,
-                buildeadAt: 2012,
-                repaired: false,
-                address: {
-                    number: 100,
-                    street: {title: 'White street'}
-                }
-            },
-            {
-                id: 2,
-                buildeadAt: 2008,
-                repaired: false,
-                address: {
-                    number: 100,
-                    street: {title: 'Happy street'}
-                }
-            },
-            {
-                id: 3,
-                buildeadAt: 2020,
-                repaired: false,
-                address: {
-                    number: 101,
-                    street: {title: 'Happy street'}
-                }
-            },
-        ]
-    }
+    city = testCity
 })
 
 

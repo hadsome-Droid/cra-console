@@ -9,30 +9,32 @@ import Forest2 from "./assets/image/i3.webp"
 import styled from "styled-components";
 import {BoxTransform} from "./components/transform/BoxTransform";
 import CallTest01 from "./components/Tests/test-01/callTest-01";
+import {CallTest05} from "./components/Tests/test-05/CallTest05";
 
 
 function App() {
     console.log('App rendered')
     return (
         <div>
-            <BoxFlex>
-                {/*<PageTitle title={'This is APP component'}/>*/}
-                {/*<PageImg src={Nodejs}/>*/}
-                {/*<PageImg src={Npmsvg}/>*/}
-                {/*<PageTitle title={'My Profile'}/>*/}
-                {/*<Rating value={2}/>*/}
-                {/*<Accordion titleValue={'Menu'} collapsed={true}/>*/}
-                {/*<Accordion titleValue={'My Contacts'} collapsed={false}/>*/}
-                {/*<PageImg src={Forest}/>*/}
-                {/*<Rating value={0}/>*/}
-                {/*<Rating value={1}/>*/}
-                {/*<Rating value={2}/>*/}
-                {/*<Rating value={3}/>*/}
-                {/*<Rating value={4}/>*/}
-                {/*<Rating value={5}/>*/}
-            </BoxFlex>
+            {/*<BoxFlex>*/}
+            {/*    /!*<PageTitle title={'This is APP component'}/>*!/*/}
+            {/*    /!*<PageImg src={Nodejs}/>*!/*/}
+            {/*    /!*<PageImg src={Npmsvg}/>*!/*/}
+            {/*    /!*<PageTitle title={'My Profile'}/>*!/*/}
+            {/*    /!*<Rating value={2}/>*!/*/}
+            {/*    /!*<Accordion titleValue={'Menu'} collapsed={true}/>*!/*/}
+            {/*    /!*<Accordion titleValue={'My Contacts'} collapsed={false}/>*!/*/}
+            {/*    /!*<PageImg src={Forest}/>*!/*/}
+            {/*    /!*<Rating value={0}/>*!/*/}
+            {/*    /!*<Rating value={1}/>*!/*/}
+            {/*    /!*<Rating value={2}/>*!/*/}
+            {/*    /!*<Rating value={3}/>*!/*/}
+            {/*    /!*<Rating value={4}/>*!/*/}
+            {/*    /!*<Rating value={5}/>*!/*/}
+            {/*</BoxFlex>*/}
             <BoxTransform/>
             <CallTest01/>
+            <CallTest05/>
         </div>
     );
 }
