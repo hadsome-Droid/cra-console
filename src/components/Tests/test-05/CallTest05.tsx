@@ -3,8 +3,8 @@ import {dev, messages} from "./05";
 
 export const CallTest05 = () => {
 
-    console.log(dev, '<<<')
-    console.log(messages, '>>>>')
+    // console.log(dev, '<<<')
+    // console.log(messages, '>>>>')
 // const str = 'East 101st StreetWest 42nd StreetMadison AvenueBroadway Wall Street'
 //     const generateData = (count: number) => {
 //         const result = [];
